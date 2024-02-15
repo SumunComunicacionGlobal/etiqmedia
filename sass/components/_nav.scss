@@ -1,3 +1,9 @@
+#masterhead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
 .main-nav {
     height: 48px;
     background: var(--wp--custom--color--neutral-white);

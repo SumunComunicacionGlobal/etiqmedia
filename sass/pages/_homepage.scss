@@ -12,3 +12,12 @@ main {
         opacity: 1;
      }
 }
+
+#section-tecnologias {
+    
+    .wp-block-cover__background {
+        opacity: 0.3;
+        background: url(./assets/img/bg-section-tecnologias.png), lightgray -6px -8px / 100% 100% no-repeat, var(--wp--preset--color--neutral-10);
+        mix-blend-mode: lighten;
+    }
+}

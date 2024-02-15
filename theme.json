@@ -392,7 +392,8 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--main-font)",
-					"lineHeight": "var(--wp--custom--line-height--headings)"
+					"lineHeight": "var(--wp--custom--line-height--headings)",
+					"fontWeight": "400"
 				}
 			},
 			"h1": {

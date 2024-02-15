@@ -24,6 +24,10 @@ wp.domReady( () => {
 			name: 'with-arrow',
 			label: 'Con Flecha',
 		},
+		{
+			name: 'theme-with-icon',
+			label: 'Tema con icono',
+		},
 	] );
 	wp.blocks.registerBlockStyle( 'core/social-links', [
 		{
@@ -54,6 +58,10 @@ wp.domReady( () => {
 		{
 			name: 'group-horizontal-scroll',
 			label: 'Horizontal scroll',
+		},
+		{
+			name: 'card',
+			label: 'Card Group',
 		},
 	] );
 	
