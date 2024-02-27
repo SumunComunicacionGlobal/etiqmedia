@@ -1,0 +1,26 @@
+{
+    "apiVersion": 2,
+    "name": "acf/card-collapsed",
+    "title": "Card collapsed",
+    "category": "design",
+    "icon": "editor-insertmore",
+    "keywords": ["card", "collapsed", "media", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "card-collapsed.php"
+    },
+    "supports": {
+        "align" : true,
+        "className": true,
+        "spacing": {
+            "margin": true, 
+            "padding": true, 
+            "blockGap": true
+        },
+        "jsx": true 
+    },
+
+    "editorStyle": "file:./card-collapsed-editor.css",
+    "style": "file:./card-collapsed.css",
+    "script": "card-collapsed"
+}

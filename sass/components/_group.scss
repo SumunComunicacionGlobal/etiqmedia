@@ -1,13 +1,16 @@
 .is-style-group-horizontal-scroll {
     gap: var(--wp--custom--layout--block-gap);
     padding: var(--wp--preset--spacing--20);
-    padding-left: 20dvw !important;
     margin: 0;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     display: flex;
+
+    .home & {
+        padding-left: 20dvw !important;
+    }
 
     &::-webkit-scrollbar {
         display: none;
@@ -28,3 +31,10 @@
         }
     }
 }
+
+.wp-block-group.is-nowrap {
+    .wp-block-image {
+        line-height: 1;
+    }
+}
+

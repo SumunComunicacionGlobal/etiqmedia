@@ -1,6 +1,6 @@
 .wp-block-cover {
     &.is-style-cover-contain-background { 
-        .wp-block-cover__image-background {
+        .wp-block-cover__image-background, .wp-block-cover__video-background {
             object-fit: contain;
         }
     }

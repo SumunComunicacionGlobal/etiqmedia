@@ -121,7 +121,7 @@
 				"neutral-black": "#000000"
 			},
 			"layout": {
-				"content": "1280px",
+				"content": "1120px",
 				"wide": "90%",
 				"sidebar": "336px",
 				"page": "var(--wp--custom--layout--content)",
@@ -283,7 +283,7 @@
 				},
 				{
 					"name": "H2",
-					"size": "clamp(2rem, 4.4vw, 3rem)",
+					"size": "clamp(2rem, 4.4vw, 2.75rem)",
 					"slug": "heading-2"
 				},
 				{
@@ -368,7 +368,7 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "var(--wp--custom--color--link)"
+					"text": "var(--wp--preset--color--primary)"
 				}
 			},
 			"button": {
@@ -404,7 +404,8 @@
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--heading-2)"
+					"fontSize": "var(--wp--preset--font-size--heading-2)",
+					"lineHeight": "var(--wp--custom--line-height--tiny)"
 				}
 			},
 			"h3": {

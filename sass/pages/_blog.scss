@@ -1,2 +1,16 @@
 
+.filter-by {
+    .wp-block-categories-list {
+        list-style: none;
+        display: flex;
+        gap: var(--wp--custom--layout--block-gap);
+        margin: 0;
+        padding: 0;
+    }
+}
 
+.wp-block-post-title.has-background-color {
+    a:hover {
+        color: var(--wp--custom--color--link);
+    }
+}

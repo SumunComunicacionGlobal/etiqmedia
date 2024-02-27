@@ -17,7 +17,39 @@ main {
     
     .wp-block-cover__background {
         opacity: 0.3;
-        background: url(./assets/img/bg-section-tecnologias.png), lightgray -6px -8px / 100% 100% no-repeat, var(--wp--preset--color--neutral-10);
+        background: url(./assets/img/bg-section-tecnologias.png), var(--wp--preset--color--neutral-10) -6px -8px / 100% 100% no-repeat, var(--wp--preset--color--neutral-10);
         mix-blend-mode: lighten;
+    }
+}
+
+p.slick-slide {
+    text-transform: uppercase;
+    
+    @media ($above-tablet) {
+        padding-left: var(--wp--preset--spacing--60);
+    }
+
+    &:nth-child(1) {
+        color: var(--wp--preset--color--primary);
+    }
+    &:nth-child(2) {
+        color: var(--wp--preset--color--secondary);
+    }
+    &:nth-child(3) {
+        color: var(--wp--preset--color--accent);
+    }
+}
+
+.grid-nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 256px);
+
+    @media ($below-tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media ($below-mobile) {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

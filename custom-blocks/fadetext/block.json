@@ -1,0 +1,36 @@
+{
+    "name": "acf/fadetext",
+    "title": "Fade Text",
+    "textDomain": "smn_admin",
+    "description": "Repeater with fade texts slider",
+    "category": "design",
+    "icon": "slides",
+    "keywords": ["Slider", "Fade", "Text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "fadetext.php"
+    },
+    "supports": {
+        "align" : true,
+        "align_text": true,
+        "multiple": true,
+        "className": true,
+        "color": {
+            "text": true,
+            "background": true
+        },
+        "spacing": {
+            "margin": true, 
+            "padding": true
+        },
+        "typography": {
+            "fontSize": true,
+            "textTransform": true,
+            "__experimentalFontFamily": true
+        },
+        "jsx": true
+    },
+
+    "style": "file:./fadetext.css",
+    "script": "slider"
+}

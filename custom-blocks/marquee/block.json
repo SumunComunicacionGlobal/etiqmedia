@@ -41,5 +41,5 @@
     },
 
     "style": "file:./marquee.css",
-    "script": "marquee-js"
+    "script": "marquee"
 }

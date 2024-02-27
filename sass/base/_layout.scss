@@ -2,10 +2,6 @@
     padding: var(--wp--custom--layout--block-gap);
 }
 
-.mt-0 {
-    margin-block-start: 0;
-}
-
 body .is-layout-flow {
 
     & > .wp-block-image.alignright {
@@ -17,3 +13,18 @@ body .is-layout-flow {
     }
 
 } 
+
+.mt-0 {
+    margin-block-start: 0;
+}
+.pl-1 {
+    padding-left: var(--wp--preset--spacing--10);
+}
+
+.pl-15 {
+    padding-left: 1.25rem;
+}
+
+.pl-2 {
+    padding-left: var(--wp--preset--spacing--20);
+}

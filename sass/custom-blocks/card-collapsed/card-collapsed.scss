@@ -1,0 +1,39 @@
+.wp-block-acf-card-collapsed .wp-block-media-text {
+
+    .wp-block-media-text__content {
+        align-self: flex-start;
+        padding: var(--wp--custom--layout--block-gap);
+
+        .wp-block-heading {
+            margin-top: 0;
+        }
+
+        .card-collapsed--content {
+            max-height: 2.5rem;
+            opacity: 0;
+            transition: 1s linear;
+
+            &.is-expanded {
+                max-height: 200vh;
+                opacity: 1;
+                //transition: .5s linear;
+            }
+        }
+    }
+
+    .wp-block-media-text__media {
+        background-size: 100%;
+        transition: .5s ease-in-out;
+        background-repeat: no-repeat;
+
+        &.is-expanded {
+          background-size: 125%;
+        }
+    }
+
+    .card-collapsed--toggle {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

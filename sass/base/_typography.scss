@@ -1,9 +1,15 @@
 .wp-block-post-title a {
 	text-decoration: none;
-	color: var(--wp--preset--color--secondary);
 }
 
-.has-mudstone-font-family, .has-display-font-size {
+.has-heading-1-font-size,
+.has-heading-2-font-size {
 	line-height: var(--wp--custom--line-height--tiny);
+}
+.has-heading-3-font-size,
+.has-heading-4-font-size,
+.has-heading-5-font-size,
+.has-heading-6-font-size {
+	line-height: var(--wp--custom--line-height--headings);
 }
 
