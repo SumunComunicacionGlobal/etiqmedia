@@ -5,7 +5,7 @@
     margin-top: 0; }
   .wp-block-acf-card-collapsed .wp-block-media-text .wp-block-media-text__content .card-collapsed--content {
     opacity: 1;
-    max-height: auto;
+    max-height: 100%;
     transition: .5s linear; }
 
 .wp-block-acf-card-collapsed .wp-block-media-text .wp-block-media-text__media {
