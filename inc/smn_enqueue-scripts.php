@@ -8,6 +8,12 @@
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'etiqmedia-js', get_template_directory_uri() . '/assets/js/etiqmedia.js', array(), true );
 
+	// Localiza el script para pasar la URL de AJAX
+    wp_localize_script('etiqmedia-js', 'my_script_vars', array(
+        'ajaxurl' => admin_url('admin-ajax.php'),
+		'sectores_nonce' => wp_create_nonce('sectores_nonce')
+    ));
+
 }
 add_action( 'wp_enqueue_scripts', 'smn_scripts' );
 
@@ -25,3 +31,4 @@ function smn_gutenberg_scripts() {
 	);
 }
 add_action( 'enqueue_block_editor_assets', 'smn_gutenberg_scripts' );
+

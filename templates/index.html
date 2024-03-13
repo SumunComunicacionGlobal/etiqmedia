@@ -1,20 +1,36 @@
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:query-title {"type":"archive"} /-->
+<!-- wp:group {"tagName":"header","align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"bodytext","layout":{"type":"constrained"},"metadata":{"name":"Header Blog"}} -->
+<header class="wp-block-group alignfull has-bodytext-background-color has-background" style="padding-top:0;padding-bottom:0"><!-- wp:cover {"dimRatio":0,"overlayColor":"bodytext","focalPoint":{"x":0.5,"y":0.5},"minHeightUnit":"vh","contentPosition":"top center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-center" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><span aria-hidden="true" class="wp-block-cover__background has-bodytext-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:block {"ref":543} /-->
 
-<!-- wp:term-description /--></div>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"},"margin":{"top":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","layout":{"type":"constrained","contentSize":"920px","justifyContent":"left"}} -->
+<div class="wp-block-group has-background-color has-text-color has-link-color" style="margin-top:var(--wp--preset--spacing--70);padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Recursos y novedades</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></header>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:query {"queryId":33,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
-<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-<!-- wp:post-featured-image /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"metadata":{"name":"Main content"}} -->
+<main class="wp-block-group"><!-- wp:block {"ref":864} /-->
 
-<!-- wp:post-date /-->
+<!-- wp:query {"queryId":2,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"blockGap":"var:preset|spacing|10"},"dimensions":{"minHeight":"100%"}},"backgroundColor":"bodytext","className":"is-style-card","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"},"metadata":{"name":"Card"}} -->
+<div class="wp-block-group is-style-card has-bodytext-background-color has-background" style="min-height:100%;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:post-featured-image {"style":{"layout":{"selfStretch":"fixed","flexSize":"212px"}}} /-->
 
-<!-- wp:post-title {"isLink":true} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|10","right":"var:preset|spacing|10"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"},"metadata":{"name":"Card content"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--10)"><!-- wp:post-terms {"term":"category","prefix":"\u003cimg class=\u0022wp-image-177\u0022 style=\u0022width: 10px;\u0022 src=\u0022http://localhost:3000/etiqmedia/wp-content/uploads/2024/02/dot-16-16.svg\u0022 alt=\u0022\u0022\u003e ","style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}},"typography":{"textTransform":"uppercase"}},"textColor":"background","fontSize":"small"} /-->
+
+<!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","fontSize":"heading-6"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 <!-- /wp:post-template -->
 
-<!-- wp:query-pagination -->
+<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
 <!-- wp:query-pagination-previous /-->
 
 <!-- wp:query-pagination-numbers /-->

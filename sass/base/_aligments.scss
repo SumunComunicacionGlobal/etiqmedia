@@ -6,7 +6,11 @@
     & > img:first-child {
         width: 1.5rem;
         position: absolute;
-        top: .5rem;
+        top: .25rem;
         left: 0;
     }
+}
+
+.wp-block-post-terms a {
+    text-decoration: none;
 }

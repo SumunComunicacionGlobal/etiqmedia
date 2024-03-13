@@ -1,11 +1,12 @@
 .is-style-card {
     padding: var(--wp--preset--spacing--20);
-    border-radius: var(--wp--custom--border-radius--md);
+    border-radius: var(--wp--custom--border-radius--lg);
     border: 2px solid rgba(255, 255, 255, 0.15);
     background: rgba(255, 255, 255, 0.13);
     box-shadow: 4px 6px 8px 4px rgba(0, 0, 0, 0.08), 5px -5px 12px 0px rgba(255, 255, 255, 0.05) inset, -5px 5px 12px 0px rgba(255, 255, 255, 0.05) inset;
     backdrop-filter: blur(7.5px);
     transition: 0.3s ease-in-out;
+    height: 100%;
 
     &.is-style-card-hover:hover {
         color: var(--wp--preset--color--neutral-100) !important;
@@ -14,5 +15,17 @@
         figure.wp-block-image img {
             filter: invert(1);
         }
+    }
+
+    &:has(video) {
+        border: 0;
+    }
+
+    video.rsfv-video,
+    iframe.rsfv-video {
+        aspect-ratio: 4/3 !important;
+        height: 100% !important;
+        object-fit: cover;
+        border-radius: 0 var(--wp--custom--border-radius--lg) var(--wp--custom--border-radius--lg) 0;
     }
 }

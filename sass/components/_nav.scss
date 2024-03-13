@@ -48,9 +48,35 @@
         }
     }
 
+    .wp-block-navigation-item {
+        width: 100%;
+    }
+
     .wp-block-navigation-item__content {
         border-bottom: 1px solid;
-        padding-bottom: 1rem;
+        padding-bottom: .5rem;
+        position: relative;
+        display: flex;
+        gap: .5rem;
+        align-items: start;
+        line-height: 1;
+        width: 100%;
+
+        &::before {
+            content: url(./assets/icons/icon-add.svg);
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            transition: .5s ease-in-out;
+        }
+
+        &:hover::before {
+            margin-right: 1rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 

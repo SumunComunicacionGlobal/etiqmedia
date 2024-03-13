@@ -1,0 +1,50 @@
+.sectores-container {
+    display: flex;
+    gap: var(--wp--custom--layout--block-gap);
+
+    .is-style-card {
+        max-width: 80%;
+        padding: 0;
+        display: flex;
+
+        > .wp-block-group {
+            flex-basis: 50%;
+            gap: 0;
+            padding-left: var(--wp--preset--spacing--40);
+
+            .wp-block-post-title {
+                margin: 0;
+            }
+        }
+
+        > figure.wp-block-post-featured-image {
+            flex-basis: 50%;
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+.sectores-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: 20%;
+
+    a.sector-link {
+        color: var(--wp--preset--color--bodytext);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: var(--wp--preset--font-size--caption);
+        font-weight: 600;
+
+        &:hover {
+            color: var(--wp--preset--color--primary);
+            cursor: pointer;
+        }
+    }
+}
+
+.sectores-post.is-style-group-horizontal-scroll {
+    overflow-x: visible;
+}

@@ -1,15 +1,19 @@
 .is-style-group-horizontal-scroll {
-    gap: var(--wp--custom--layout--block-gap);
-    padding: var(--wp--preset--spacing--20);
-    margin: 0;
+    display: flex;
     flex-wrap: nowrap;
+    gap: var(--wp--preset--spacing--20);
+    padding: var(--wp--preset--spacing--20);
+    margin: 0;  
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    display: flex;
+    
 
-    .home & {
-        padding-left: 20dvw !important;
+    &--is-padding {
+        @media ($above-tablet) {
+            padding-left: 20dvw !important;
+        }   
     }
 
     &::-webkit-scrollbar {
@@ -25,6 +29,7 @@
         max-width: 316px;
         margin-block-start: 0;
         transition: transform .2s ease-in-out;
+        scroll-snap-align: start;
 
         @media ($below-mobile-xs) {
             max-width: 280px;
