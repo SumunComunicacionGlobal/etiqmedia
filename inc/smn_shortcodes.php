@@ -78,4 +78,4 @@ function sectores_ajax() {
 }
 add_action('wp_ajax_sectores', 'sectores_ajax');
 add_action('wp_ajax_nopriv_sectores', 'sectores_ajax');
-?>
+

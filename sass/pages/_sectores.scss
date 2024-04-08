@@ -1,6 +1,15 @@
 .sectores-container {
     display: flex;
     gap: var(--wp--custom--layout--block-gap);
+    align-items: center;
+
+    .sectores-posts.is-style-group-horizontal-scroll {
+        padding: 0;
+
+        .wp-block-group:hover {
+            transform: translateX(0);
+        }
+    }
 
     .is-style-card {
         max-width: 80%;
@@ -9,11 +18,26 @@
 
         > .wp-block-group {
             flex-basis: 50%;
-            gap: 0;
-            padding-left: var(--wp--preset--spacing--40);
+            padding: var(--wp--preset--spacing--40);
 
             .wp-block-post-title {
                 margin: 0;
+            }
+
+            .wp-block-post-excerpt__more-link {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                color: var(--wp--preset--color--white);
+                text-decoration: none;
+                font-size: 0.875rem;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    color: var(--wp--custom--color--link);
+                    gap: 1rem;
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -21,6 +45,10 @@
             flex-basis: 50%;
             display: block;
             margin: 0;
+
+            video.rsfv-video, iframe.rsfv-video {
+                aspect-ratio: unset !important;
+            }
         }
     }
 }
@@ -28,7 +56,7 @@
 .sectores-list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-basis: 20%;
 
     a.sector-link {
@@ -45,6 +73,3 @@
     }
 }
 
-.sectores-post.is-style-group-horizontal-scroll {
-    overflow-x: visible;
-}

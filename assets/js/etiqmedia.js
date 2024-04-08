@@ -62,6 +62,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 });
 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Obtén el elemento .toggle-wp-block-partners
+    const toggle = document.querySelector('.toggle-wp-block-partners');
+
+    // Si el elemento .toggle-wp-block-partners existe
+    if (toggle) {
+        // Agrega un event listener para el evento click
+        toggle.addEventListener('click', function() {
+            // Obtén el elemento .wp-block-partners
+            const partners = document.querySelector('.wp-block-partners');
+
+            // Si el elemento .wp-block-partners existe
+            if (partners) {
+                // Togglear la clase is-open
+                partners.classList.toggle('wp-block-partners--is-open');
+            }
+        });
+    }
+});
+
 var sectores_nonce = my_script_vars.sectores_nonce;
 
 jQuery(document).ready(function($) {

@@ -1,6 +1,6 @@
 <div class="wp-block-group is-style-card has-background-color has-bodytext-background-color">
     <div class="wp-block-group is-vertical is-nowrap is-layout-flex">
-        <h3 class="wp-block-post-title" style="text-transform:uppercase;"><?php the_title(); ?></h3>
+        <h3 class="wp-block-post-titleoop" style="text-transform:uppercase;"><?php the_title(); ?></h3>
         <?php the_excerpt();?>
         <p class="wp-block-post-excerpt__more-text">
             <a class="wp-block-post-excerpt__more-link" href="<?php the_permalink(); ?>">
