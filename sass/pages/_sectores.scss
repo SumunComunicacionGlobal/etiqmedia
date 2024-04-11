@@ -3,6 +3,11 @@
     gap: var(--wp--custom--layout--block-gap);
     align-items: center;
 
+    @media ($below-tablet) {
+        flex-direction: column;
+        align-items: normal;
+    }
+
     .sectores-posts.is-style-group-horizontal-scroll {
         padding: 0;
 
@@ -13,6 +18,10 @@
 
     .is-style-card {
         max-width: 80% !important;
+
+        @media ($below-tablet) {
+            flex-direction: column-reverse;
+        }
         
     }
 }
