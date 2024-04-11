@@ -1,6 +1,6 @@
-<!-- wp:group {"tagName":"header","align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"bodytext","layout":{"type":"constrained"},"metadata":{"name":"Header single"}} -->
-<header class="wp-block-group alignfull has-bodytext-background-color has-background" style="padding-top:0;padding-bottom:0"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":80,"overlayColor":"bodytext","focalPoint":{"x":0.5,"y":0.5},"minHeight":50,"contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30);min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-bodytext-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:block {"ref":543} /-->
+<!-- wp:group {"tagName":"header","metadata":{"name":"Header single"},"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"neutral-80","layout":{"type":"constrained"}} -->
+<header class="wp-block-group alignfull has-neutral-80-background-color has-background" style="padding-top:0;padding-bottom:0"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":80,"overlayColor":"neutral-80","isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.5},"minHeight":50,"contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30);min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-neutral-80-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:block {"ref":543} /-->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","layout":{"type":"constrained","contentSize":"920px","justifyContent":"left"}} -->
 <div class="wp-block-group has-background-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
@@ -14,7 +14,13 @@
 <!-- /wp:cover --></header>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained","justifyContent":"center"},"metadata":{"name":"Main content"}} -->
+<!-- wp:group {"metadata":{"name":"Breadcrumbs"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:shortcode -->
+[rank_math_breadcrumb]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main content"},"layout":{"type":"constrained","justifyContent":"center"}} -->
 <main class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"70%"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:post-content /--></div>
@@ -48,7 +54,7 @@
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"constrained"},"metadata":{"name":"Navigation"}} -->
+<!-- wp:group {"metadata":{"name":"Navigation"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-group-horizontal-scroll","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group is-style-group-horizontal-scroll"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"linkLabel":true,"arrow":"arrow"} /-->
 

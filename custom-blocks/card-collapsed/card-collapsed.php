@@ -56,7 +56,7 @@ if ( ! empty( $block['className'] ) ) {
                     )
                 )
             ),
-            'backgroundColor' => 'bodytext',
+            'backgroundColor' => 'neutral-80',
             'textColor' => 'background',
             'className' => 'is-style-card'
         ),

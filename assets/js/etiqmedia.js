@@ -105,3 +105,12 @@ jQuery(document).ready(function($) {
         });
     });
 });
+
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 0) { // Ajusta este valor según tus necesidades
+        document.body.classList.add("scrolled");
+    } else {
+        document.body.classList.remove("scrolled");
+    }
+});

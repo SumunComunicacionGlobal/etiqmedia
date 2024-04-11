@@ -1,4 +1,4 @@
-<div class="wp-block-group is-style-card has-background-color has-bodytext-background-color">
+<div class="wp-block-group is-style-card is-style-card--horizontal has-background-color has-neutral-80-background-color">
     <div class="wp-block-group is-vertical is-nowrap is-layout-flex">
         <h3 class="wp-block-post-titleoop" style="text-transform:uppercase;"><?php the_title(); ?></h3>
         <?php the_excerpt();?>

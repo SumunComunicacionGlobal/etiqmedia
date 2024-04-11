@@ -8,11 +8,12 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    height: 100%;
     
 
     &--is-padding {
         @media ($above-tablet) {
-            padding-left: 20dvw !important;
+            margin-left: 20dvw !important;
         }   
     }
 

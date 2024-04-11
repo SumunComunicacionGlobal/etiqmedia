@@ -4,12 +4,21 @@
     width: 100%;
     left: 50%;
     transform: translate(-50%);
+    transition: .6s ease-in-out;
 
     @media ($below-mobile) {
         left: auto;
         transform: none;
         right: 0;
         padding: 0 2rem;
+    }
+
+    .scrolled & {
+        backdrop-filter: blur(10px);
+        background-color: var(--wp--preset--color--neutral-80);
+        max-width: 100%;
+        padding: 0 var(--wp--custom--layout--block-gap);
+        
     }
 }
 
