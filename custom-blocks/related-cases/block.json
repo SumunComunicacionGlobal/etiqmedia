@@ -1,0 +1,24 @@
+{
+    "apiVersion": 2,
+    "name": "acf/related-cases",
+    "title": "Relates uses cases",
+    "category": "design",
+    "icon": "editor-insertmore",
+    "keywords": ["related", "cases", "casos", "uso"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "related-cases.php"
+    },
+    "supports": {
+        "align" : true,
+        "className": true,
+        "spacing": {
+            "margin": true, 
+            "padding": true, 
+            "blockGap": true
+        },
+        "jsx": true 
+    },
+
+    "style": "file:./related-cases.css"
+}

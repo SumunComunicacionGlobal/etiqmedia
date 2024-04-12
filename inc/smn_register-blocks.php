@@ -12,6 +12,7 @@ function smn_register_blocks() {
     register_block_type( get_stylesheet_directory() . '/custom-blocks/marquee' );
     register_block_type( get_stylesheet_directory() . '/custom-blocks/fadetext' );
     register_block_type( get_stylesheet_directory() . '/custom-blocks/card-collapsed' );
+    register_block_type( get_stylesheet_directory() . '/custom-blocks/related-cases' );
 }
 
 add_action( 'init', 'smn_register_blocks' );

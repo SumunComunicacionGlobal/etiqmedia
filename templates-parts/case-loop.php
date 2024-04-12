@@ -1,6 +1,8 @@
 <div class="wp-block-group is-style-card is-style-card--horizontal has-background-color has-neutral-80-background-color">
-    <div class="wp-block-group is-vertical is-nowrap is-layout-flex">
-        <h3 class="wp-block-post-titleoop" style="text-transform:uppercase;"><?php the_title(); ?></h3>
+    <div class="wp-block-group">
+        <a class="stretched-link" href="<?php the_permalink(); ?>">
+            <h3 class="wp-block-post-title" style="text-transform:uppercase;"><?php the_title(); ?></h3>
+        </a>    
         <?php the_excerpt();?>
         <p class="wp-block-post-excerpt__more-text">
             <a class="wp-block-post-excerpt__more-link" href="<?php the_permalink(); ?>">
@@ -11,9 +13,7 @@
     </div>
 
     <figure class="wp-block-post-featured-image">
-        <a href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail(); ?>
-        </a>
     </figure>
 
 </div>

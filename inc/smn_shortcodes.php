@@ -32,7 +32,7 @@ function sectores_shortcode() {
         while ($query->have_posts()) {
             $query->the_post();
             // Aquí puedes personalizar cómo se muestran las entradas
-            get_template_part('templates-part/sector', 'loop');
+            get_template_part('templates-parts/case', 'loop');
         }
     }
     echo '</div>';
@@ -69,7 +69,7 @@ function sectores_ajax() {
         while ($query->have_posts()) {
             $query->the_post();
             // Aquí puedes personalizar cómo se muestran las entradas
-            get_template_part('templates-part/sector', 'loop');
+            get_template_part('templates-parts/case', 'loop');
         }
     }
 
@@ -116,7 +116,7 @@ function casos_relacionados_shortcode() {
         while ($query->have_posts()) {
             $query->the_post();
             // Aquí puedes personalizar cómo se muestran los casos de uso
-            get_template_part('templates-part/sector', 'loop');
+            get_template_part('templates-parts/case', 'loop');
         }
     }
     echo '</div>';

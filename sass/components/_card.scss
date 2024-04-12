@@ -17,6 +17,15 @@
         }
     }
 
+    a {
+        color: var(--wp--preset--color--white);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--wp--custom--color--link);
+        }
+    }
+
     &:has(video) {
         border: 0;
     }
@@ -66,10 +75,10 @@
             display: flex;
             align-items: center;
             gap: .5rem;
-            color: var(--wp--preset--color--white);
-            text-decoration: none;
             font-size: 0.875rem;
             transition: .3s ease-in-out;
+            z-index: 2;
+            position: relative;
 
             &:hover {
                 color: var(--wp--custom--color--link);
@@ -83,9 +92,5 @@
         flex-basis: 50%;
         display: block;
         margin: 0;
-
-        video.rsfv-video, iframe.rsfv-video {
-            aspect-ratio: unset !important;
-        }
     }
 }
