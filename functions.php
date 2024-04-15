@@ -64,6 +64,9 @@ add_action( 'wp_enqueue_scripts', 'smn_styles' );
 // Enqueue scripts
 require get_template_directory() . '/inc/smn_enqueue-scripts.php';
 
+// Disable Emojis
+require get_template_directory() . '/inc/smn_disable-emojis.php';
+
 // Hooks to add content above the navigation block
 require get_template_directory() . '/inc/smn_nav.php';
 
@@ -76,6 +79,9 @@ require get_template_directory() . '/inc/smn_shortcodes.php';
 
 /* Quitar <p> y <br/> de Contact Form 7 */
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+// Default thumbnail size
+add_image_size( 'img-card', 600, 420, true );
 
 
 /**

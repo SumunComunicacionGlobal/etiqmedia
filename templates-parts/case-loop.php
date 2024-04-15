@@ -1,4 +1,4 @@
-<div class="wp-block-group is-style-card is-style-card--horizontal has-background-color has-neutral-80-background-color">
+<div class="wp-block-group is-style-card is-style-card--horizontal is-content-justification-left has-background-color has-neutral-80-background-color">
     <div class="wp-block-group">
         <a class="stretched-link" href="<?php the_permalink(); ?>">
             <h3 class="wp-block-post-title" style="text-transform:uppercase;"><?php the_title(); ?></h3>
@@ -13,7 +13,7 @@
     </div>
 
     <figure class="wp-block-post-featured-image">
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail('img-card'); ?>
     </figure>
 
 </div>
