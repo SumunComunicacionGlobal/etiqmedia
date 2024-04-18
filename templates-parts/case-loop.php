@@ -6,7 +6,7 @@
         <?php the_excerpt();?>
         <p class="wp-block-post-excerpt__more-text">
             <a class="wp-block-post-excerpt__more-link" href="<?php the_permalink(); ?>">
-            <img width="16" height="16" class="wp-image-646" src="http://localhost:8888/etiqmedia/wp-content/uploads/2024/02/circle-add-white.svg" alt="">
+            <img width="16" height="16" class="wp-image-646" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/circle-add-white.svg" alt="">
             Ver caso
             </a>
         </p>
