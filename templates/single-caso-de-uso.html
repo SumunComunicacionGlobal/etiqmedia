@@ -3,8 +3,8 @@
 <!-- wp:group {"metadata":{"name":"HERO"},"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"neutral-80","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-neutral-80-background-color has-background" id="hero" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":40,"overlayColor":"neutral-80","isUserOverlayColor":true,"focalPoint":{"x":1,"y":0},"minHeight":80,"minHeightUnit":"vh","isDark":false,"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"textColor":"background","className":"is-style-cover-contain-background","layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignfull is-light is-style-cover-contain-background has-background-color has-text-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30);min-height:80vh"><span aria-hidden="true" class="wp-block-cover__background has-neutral-80-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"align":"left","placeholder":"Escribe el título…","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"body"} -->
+<div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:column {"width":"56%"} -->
+<div class="wp-block-column" style="flex-basis:56%"><!-- wp:paragraph {"align":"left","placeholder":"Escribe el título…","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"body"} -->
 <p class="has-text-align-left has-body-font-size" style="text-transform:uppercase">Casos de uso</p>
 <!-- /wp:paragraph -->
 
@@ -34,6 +34,18 @@
 <main class="wp-block-group mt-0"><!-- wp:post-content {"backgroundColor":"neutral-10","layout":{"type":"constrained"}} /--></main>
 <!-- /wp:group -->
 
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|80","bottom":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"backgroundColor":"primary","textColor":"background","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background-color has-primary-background-color has-text-color has-background has-link-color" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"heading-2"} -->
+<p class="has-heading-2-font-size" style="text-transform:uppercase">También te puede<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-bodytext-color">interesar↘</mark></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"className":"is-style-group-horizontal-scroll\u002d\u002dis-padding","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull is-style-group-horizontal-scroll--is-padding" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:shortcode -->
+[casos_relacionados]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
 <!-- wp:template-part {"slug":"recursos-y-novedades","className":"mt-0"} /-->
 
-<!-- wp:template-part {"slug":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","className":"mt-0"} /-->

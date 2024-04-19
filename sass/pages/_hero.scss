@@ -25,5 +25,12 @@
                 object-fit: cover;
             }
         }
+
+        .wp-block-cover__image-background {
+            
+            @media ($below-mobile) {
+                object-fit: cover;
+            }
+        }
     }
 }
