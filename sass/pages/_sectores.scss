@@ -18,6 +18,7 @@
 
     .is-style-card {
         max-width: 80% !important;
+        height: 100%;
 
         @media ($below-tablet) {
             flex-direction: column-reverse;
@@ -35,9 +36,12 @@
     flex-direction: column;
     gap: 1.5rem;
     flex-basis: 20%;
+    padding: var(--wp--preset--spacing--20);
+    border-radius: var(--wp--custom--border-radius--lg);
+    background-color: var(--wp--preset--color--neutral-80);
 
     a.sector-link {
-        color: var(--wp--preset--color--bodytext);
+        color: var(--wp--preset--color--white);
         text-decoration: none;
         text-transform: uppercase;
         font-size: var(--wp--preset--font-size--caption);

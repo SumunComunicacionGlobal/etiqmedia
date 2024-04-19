@@ -57,7 +57,7 @@ p.slick-slide {
 .wp-block-partners {
 
     figure.wp-block-gallery {
-        max-height: 172px;
+        max-height: 96px;
         overflow-y: hidden;
         transition: max-height .3s ease-in-out;
 
@@ -74,4 +74,13 @@ p.slick-slide {
 
 .cmplz-cookiebanner .cmplz-logo img {
     max-height: 20px !important;
+}
+
+#alianzas-y-partners {
+    .wp-block-group.is-nowrap.is-layout-flex {
+        
+        @media ($below-tablet) {
+            flex-wrap: wrap !important;
+        }
+    }
 }

@@ -32,6 +32,24 @@
         }
     }
 
+    .taxonomy-category {
+        display: flex;
+        gap: .5rem;
+        align-items: flex-start;
+
+        span {
+            max-width: 10px;
+        }
+    }
+
+    @media ($below-mobile) {
+        flex-direction: column;
+
+        figure.wp-block-post-featured-image {
+            flex-basis: 100%;
+        }
+    }
+
     &.is-content-justification-left {
         max-height: 420px;
         border: 0;
@@ -59,6 +77,10 @@
     > .wp-block-group {
         flex-basis: 50%;
         padding: var(--wp--preset--spacing--40);
+
+        @media ($below-tablet) {
+            padding: var(--wp--preset--spacing--20);
+        }
         
         a {
             color: var(--wp--preset--color--white);

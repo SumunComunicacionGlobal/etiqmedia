@@ -20,6 +20,10 @@
             top: 0;
             width: 100%;
             object-position: 100% 0%;
+
+            @media ($below-mobile) {
+                object-fit: cover;
+            }
         }
     }
 }
