@@ -14,11 +14,8 @@ main {
 }
 
 #section-tecnologias {
-    
-    .wp-block-cover__background {
-        opacity: 0.3;
-        background: url(./assets/img/bg-section-tecnologias.png), var(--wp--preset--color--neutral-10) -6px -8px / 100% 100% no-repeat, var(--wp--preset--color--neutral-10);
-        mix-blend-mode: lighten;
+    .wp-block-column.is-vertically-aligned-top {
+        align-self: stretch;
     }
 }
 

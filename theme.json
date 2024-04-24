@@ -288,7 +288,7 @@
 				},
 				{
 					"name": "H3",
-					"size": "clamp(1.5rem, 4.4vw, 2rem)",
+					"size": "clamp(1.5rem, 4.4vw, 1.8rem)",
 					"slug": "heading-3"
 				},
 				{

@@ -33,3 +33,7 @@ a.stretched-link, .stretched-link > a {
         flex-direction: column-reverse;
     }
 }
+
+.align-stretch {
+    align-items: stretch !important;
+}

@@ -86,8 +86,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 var sectores_nonce = my_script_vars.sectores_nonce;
 
 jQuery(document).ready(function($) {
+    // Agrega la clase 'sector-link--active' al primer elemento de la lista
+    $('.sector-link').first().addClass('sector-link--active');
+
     $('.sector-link').click(function(e) {
         e.preventDefault();
+
+        // Quita la clase 'sector-link--active' de cualquier elemento que la tenga
+        $('.sector-link--active').removeClass('sector-link--active');
+
+        // Agrega la clase 'sector-link--active' al elemento en el que se hizo clic
+        $(this).addClass('sector-link--active');
 
         var term_id = $(this).data('sector-id');
 
