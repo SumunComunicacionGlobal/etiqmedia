@@ -29,7 +29,7 @@
     cursor: pointer;
     cursor: hand; }
   .slick-loading .slick-list {
-    background: #fff url("./ajax-loader.gif") center center no-repeat; }
+    background: #fff url("../../assets/img/ajax-loader.gif") center center no-repeat; }
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {

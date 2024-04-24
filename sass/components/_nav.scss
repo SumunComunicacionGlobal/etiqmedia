@@ -38,6 +38,7 @@
 
     .wp-block-media-text {
         border-radius: var(--wp--custom--border-radius--lg);
+        position: relative;
 
         .wp-block-media-text__content {
             padding: 1.5rem;

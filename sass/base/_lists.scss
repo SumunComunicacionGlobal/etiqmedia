@@ -10,8 +10,6 @@ ul.is-style-separator-list {
     li {
         border-bottom: 1px solid;
 		padding: var(--wp--preset--spacing--10) 0;
-        display: flex;
-        justify-content: space-between;
 
         &:first-child {
             border-top: 1px solid;

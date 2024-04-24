@@ -18,10 +18,10 @@
 
     .is-style-card {
         max-width: 80% !important;
-        height: 100%;
 
         @media ($below-tablet) {
             flex-direction: column-reverse;
+            justify-content: flex-end;
         }
 
         video.rsfv-video, iframe.rsfv-video {
