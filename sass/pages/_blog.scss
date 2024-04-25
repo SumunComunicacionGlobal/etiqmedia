@@ -15,6 +15,10 @@
             opacity: 0;
             transition: .5s ease-in-out;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 
     @media ($below-tablet) {
