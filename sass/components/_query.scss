@@ -55,6 +55,11 @@
 
 
             .wp-block-post-featured-image {
+                
+
+                @media ($above-mobile) {
+                    aspect-ratio: unset !important;
+                }
 
                 img, video {
                     border-radius: 0 var(--wp--custom--border-radius--lg) var(--wp--custom--border-radius--lg) 0;
