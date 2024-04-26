@@ -18,6 +18,14 @@
         max-width: 100%;
         padding: 0 var(--wp--custom--layout--block-gap);
     }
+
+    .mobile-logo {
+        display: none;
+
+        @media ($below-mobile-xs) {
+            display: block;
+        }
+    }
 }
 
 #mega-menu {

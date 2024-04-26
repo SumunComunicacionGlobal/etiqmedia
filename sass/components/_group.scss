@@ -6,6 +6,8 @@
     margin: 0;  
     overflow-x: auto;
     overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -70,3 +72,31 @@
     }
 }
 
+.horizontal-scroll--container {
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-button-container {
+    display: flex;
+    gap: var(--wp--preset--spacing--10);
+    justify-content: flex-end;
+    overflow-x: hidden;
+
+    .scrolling-button {
+        border-radius: var(--wp--custom--border-radius--rounded);
+        background-color: var(--wp--preset--color--primary);
+        color: var(--wp--preset--color--white);
+        width: var(--wp--preset--spacing--30);
+        height: var(--wp--preset--spacing--30);
+        border: none;
+        
+        &:hover {
+            background-color: var(--wp--preset--color--primary-100);
+        }
+
+        &:disabled {
+            background-color: var(--wp--preset--color--neutral-40);
+        }
+    }
+}

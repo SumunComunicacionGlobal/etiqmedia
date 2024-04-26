@@ -1,11 +1,12 @@
 .sectores-container {
     display: flex;
     gap: var(--wp--custom--layout--block-gap);
-    align-items: center;
+    align-items: stretch;
 
     @media ($below-tablet) {
         flex-direction: column;
         align-items: normal;
+        gap: 1rem;
     }
 
     .is-style-card {
@@ -35,6 +36,17 @@
         }
         
     }
+
+    .horizontal-scroll--container {
+        padding-bottom: var(--wp--preset--spacing--20);
+    }
+    
+    .scrolling-button-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+    }
 }
 
 .sectores-list {
@@ -45,6 +57,21 @@
     padding: var(--wp--preset--spacing--20);
     border-radius: var(--wp--custom--border-radius--lg);
     background-color: var(--wp--preset--color--neutral-80);
+    margin-top: var(--wp--preset--spacing--20);
+    margin-bottom: calc(var(--wp--preset--spacing--20) * 2);
+
+    @media ($below-tablet) {
+        margin: 0;
+        flex-direction: row;
+        overflow-y: scroll;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+
+        a.sector-link {
+            flex: 0 0 auto !important;
+        }
+    }
 
     a.sector-link {
         color: var(--wp--preset--color--white);
