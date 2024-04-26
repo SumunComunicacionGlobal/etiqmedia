@@ -128,58 +128,61 @@ window.addEventListener("scroll", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".is-style-group-horizontal-scroll").forEach((content) => {
-        // Crea los botones
-        const rightBtn = document.createElement("button");
-        rightBtn.classList.add("scrolling-button", "scrolling-button--right");
-        rightBtn.innerHTML = "→";
-        rightBtn.disabled = false;
-
-        const leftBtn = document.createElement("button");
-        leftBtn.classList.add("scrolling-button", "scrolling-button--left");
-        leftBtn.innerHTML = "←";
-        leftBtn.disabled = true;
-
-        // Crea un contenedor para los botones
-        const buttonContainer = document.createElement("div");
-        buttonContainer.classList.add("scrolling-button-container");
-
-        // Agrega los botones al contenedor
-        buttonContainer.appendChild(leftBtn);
-        buttonContainer.appendChild(rightBtn);
-
-        // Crea un contenedor para el div .is-style-group-horizontal-scroll y el div .scrolling-button-container
-        const scrollContainer = document.createElement("div");
-        scrollContainer.classList.add("horizontal-scroll--container");
-
-        // Agrega el div .is-style-group-horizontal-scroll y el div .scrolling-button-container al contenedor
-        scrollContainer.appendChild(content.cloneNode(true));
-        scrollContainer.appendChild(buttonContainer);
-
-        // Reemplaza el div .is-style-group-horizontal-scroll original con el nuevo contenedor
-        content.parentNode.replaceChild(scrollContainer, content);
-
-        // Agrega los controladores de eventos de clic a los botones
-        rightBtn.addEventListener("click", () => {
-            const scrollContent = scrollContainer.firstChild;
-            scrollContent.scrollLeft += 800;
-            leftBtn.disabled = false;
-
-            // Desactiva el botón derecho si se ha llegado al final del scroll
-            if (scrollContent.scrollWidth - scrollContent.scrollLeft - scrollContent.clientWidth <= 0) {
-                rightBtn.disabled = true;
-            }
-        });
-
-        leftBtn.addEventListener("click", () => {
-            const scrollContent = scrollContainer.firstChild;
-            scrollContent.scrollLeft -= 800;
+        // Solo agrega los botones si hay más de un elemento hijo
+        if (content.children.length > 1) {
+            // Crea los botones
+            const rightBtn = document.createElement("button");
+            rightBtn.classList.add("scrolling-button", "scrolling-button--right");
+            rightBtn.innerHTML = "→";
             rightBtn.disabled = false;
 
-            // Desactiva el botón izquierdo si se ha llegado al principio del scroll
-            if (scrollContent.scrollLeft <= 0) {
-                leftBtn.disabled = true;
-            }
-        });
+            const leftBtn = document.createElement("button");
+            leftBtn.classList.add("scrolling-button", "scrolling-button--left");
+            leftBtn.innerHTML = "←";
+            leftBtn.disabled = true;
+
+            // Crea un contenedor para los botones
+            const buttonContainer = document.createElement("div");
+            buttonContainer.classList.add("scrolling-button-container");
+
+            // Agrega los botones al contenedor
+            buttonContainer.appendChild(leftBtn);
+            buttonContainer.appendChild(rightBtn);
+
+            // Crea un contenedor para el div .is-style-group-horizontal-scroll y el div .scrolling-button-container
+            const scrollContainer = document.createElement("div");
+            scrollContainer.classList.add("horizontal-scroll--container");
+
+            // Agrega el div .is-style-group-horizontal-scroll y el div .scrolling-button-container al contenedor
+            scrollContainer.appendChild(content.cloneNode(true));
+            scrollContainer.appendChild(buttonContainer);
+
+            // Reemplaza el div .is-style-group-horizontal-scroll original con el nuevo contenedor
+            content.parentNode.replaceChild(scrollContainer, content);
+
+            // Agrega los controladores de eventos de clic a los botones
+            rightBtn.addEventListener("click", () => {
+                const scrollContent = scrollContainer.firstChild;
+                scrollContent.scrollLeft += 800;
+                leftBtn.disabled = false;
+
+                // Desactiva el botón derecho si se ha llegado al final del scroll
+                if (scrollContent.scrollWidth - scrollContent.scrollLeft - scrollContent.clientWidth <= 0) {
+                    rightBtn.disabled = true;
+                }
+            });
+
+            leftBtn.addEventListener("click", () => {
+                const scrollContent = scrollContainer.firstChild;
+                scrollContent.scrollLeft -= 800;
+                rightBtn.disabled = false;
+
+                // Desactiva el botón izquierdo si se ha llegado al principio del scroll
+                if (scrollContent.scrollLeft <= 0) {
+                    leftBtn.disabled = true;
+                }
+            });
+        }
     });
 });
 

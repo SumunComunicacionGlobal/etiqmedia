@@ -83,7 +83,8 @@ add_action('wp_ajax_nopriv_sectores', 'sectores_ajax');
 // Casos de uso relacionados
 function casos_relacionados_shortcode() {
     // Obtén el ID del post actual
-    $post_id = get_the_ID();
+    global $post;
+    $post_id = $post->ID;
 
     // Obtén los términos de la taxonomía 'sector' para el post actual
     $sectores = wp_get_post_terms($post_id, 'sector');
@@ -102,12 +103,12 @@ function casos_relacionados_shortcode() {
     // Genera el loop de casos de uso relacionados
     $args = array(
         'post_type' => 'caso-de-uso',
+        'post__not_in' => array($post_id), // Excluye el post actual
         'tax_query' => array(
             array(
                 'taxonomy' => 'sector',
                 'field'    => 'term_id',
                 'terms'    => $sectores[0]->term_id,
-                'post__not_in' => array($post_id), // Excluye el post actual
             ),
         ),
     );
