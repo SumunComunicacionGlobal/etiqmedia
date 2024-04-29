@@ -125,7 +125,6 @@ window.addEventListener("scroll", function() {
 });
 
 // Añade botones de scroll a la izquierda y derecha
-
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".is-style-group-horizontal-scroll").forEach((content) => {
         // Solo agrega los botones si hay más de un elemento hijo

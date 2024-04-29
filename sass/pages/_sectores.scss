@@ -45,7 +45,12 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+    }
 
+    &:where(.broadcast){
+        .scrolling-button-container {
+            display: none;
+        }
     }
 }
 

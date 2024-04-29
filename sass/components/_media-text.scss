@@ -1,3 +1,4 @@
 .wp-block-media-text.is-image-fill .wp-block-media-text__media {
     min-height: unset;
+    border-radius: 0 var(--wp--custom--border-radius--lg) var(--wp--custom--border-radius--lg) 0;
 }

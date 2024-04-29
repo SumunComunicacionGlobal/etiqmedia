@@ -106,7 +106,7 @@ if ( ! empty( $block['className'] ) ) {
                         'core/paragraph',
                         array(
                             'className' => 'card-collapsed--toggle',
-                            'content' => 'Leer más',
+                            'content' => 'Leer menos',
                             'style' => array(
                                 'layout' => array(
                                     'selfStretch' => 'fixed',

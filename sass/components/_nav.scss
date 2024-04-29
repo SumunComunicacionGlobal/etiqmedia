@@ -14,9 +14,9 @@
     }
 
     .scrolled & {
-        background-color: var(--wp--preset--color--neutral-80);
         max-width: 100%;
         padding: 0 var(--wp--custom--layout--block-gap);
+        background-color: var(--wp--preset--color--neutral-80);
     }
 
     .mobile-logo {
@@ -98,23 +98,18 @@
 }
 
 .main-nav {
-    background: var(--wp--custom--color--neutral-white);
     border-radius: var(--wp--custom--border-radius--rounded);
     padding: .75rem 1.5rem;  
 
-    a.wp-block-navigation-item__content:hover {
-        color: var(--wp--custom--color--link);
+
+    a.wp-block-navigation-item__content {
+        color: var(--wp--preset--color--white) !important;
+        &:hover { color: var(--wp--custom--color--link) !important; }
     }
 
     .scrolled & {
         @media ($above-tablet) {
-            background: var(--wp--preset--color--neutral-80);
             transition: .3s linear;
-    
-            a {
-                color: var(--wp--preset--color--white) !important;
-                &:hover { color: var(--wp--custom--color--link) !important; }
-            }
         }
     }
 }
@@ -128,6 +123,4 @@
             }
         }
     }
-    
-        
 }
