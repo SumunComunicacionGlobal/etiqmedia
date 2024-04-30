@@ -99,12 +99,21 @@
 
 .main-nav {
     border-radius: var(--wp--custom--border-radius--rounded);
-    padding: .75rem 1.5rem;  
-
-
+    padding: .75rem 1.5rem;
+    
     a.wp-block-navigation-item__content {
-        color: var(--wp--preset--color--white) !important;
+        color: var(--wp--preset--color--white);
         &:hover { color: var(--wp--custom--color--link) !important; }
+    }
+
+    @media ($below-mobile) {
+        background: var(--wp--custom--color--neutral-white);
+    
+        a.wp-block-navigation-item__content {
+            color: initial !important;
+            &:hover { color: var(--wp--custom--color--link) !important; }
+        }
+        
     }
 
     .scrolled & {
