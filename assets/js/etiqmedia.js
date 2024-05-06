@@ -89,6 +89,9 @@ jQuery(document).ready(function($) {
     // Agrega la clase 'sector-link--active' al primer elemento de la lista
     $('.sector-link').first().addClass('sector-link--active');
 
+    // Guarda la última ID del sector que se agregó como una clase
+    var lastSectorId;
+
     $('.sector-link').click(function(e) {
         e.preventDefault();
 
@@ -97,6 +100,20 @@ jQuery(document).ready(function($) {
 
         // Agrega la clase 'sector-link--active' al elemento en el que se hizo clic
         $(this).addClass('sector-link--active');
+
+        // Obtiene la ID del sector del atributo 'data-sector-id' del elemento en el que se hizo clic
+        var sectorId = $(this).data('sector-id');
+
+        // Quita la última ID del sector que se agregó como una clase
+        if (lastSectorId) {
+            $('.sectores-container').removeClass('sector-' + lastSectorId);
+        }
+
+        // Agrega la ID del sector como una clase al contenedor '.sectores-container'
+        $('.sectores-container').addClass('sector-' + sectorId);
+
+        // Guarda la ID del sector para la próxima vez
+        lastSectorId = sectorId;
 
         var term_id = $(this).data('sector-id');
 
@@ -113,15 +130,6 @@ jQuery(document).ready(function($) {
             }
         });
     });
-});
-
-
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 0) { // Ajusta este valor según tus necesidades
-        document.body.classList.add("scrolled");
-    } else {
-        document.body.classList.remove("scrolled");
-    }
 });
 
 // Añade botones de scroll a la izquierda y derecha
@@ -185,4 +193,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+// Añade clase a body cuando se hace scroll
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 0) {
+        document.body.classList.add("scrolled");
+    } else {
+        document.body.classList.remove("scrolled");
+    }
+});

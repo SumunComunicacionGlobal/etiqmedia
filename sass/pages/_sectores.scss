@@ -10,11 +10,16 @@
     }
 
     .is-style-card {
-        max-width: 80% !important;
+        max-width: 80%;
+        height: 420px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
 
         @media ($below-tablet) {
             flex-direction: column-reverse;
             justify-content: flex-end;
+            height: auto;
+            max-width: 280px;
         }
 
         & >figure.wp-block-post-featured-image {
@@ -46,11 +51,11 @@
         bottom: 0;
         width: 100%;
     }
+}
 
-    &:where(.broadcast){
-        .scrolling-button-container {
-            display: none;
-        }
+.sector-28, .sector-18 {
+    .scrolling-button-container {
+        display: none;
     }
 }
 
