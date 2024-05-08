@@ -11,8 +11,8 @@
             flex-direction: column;
             flex-basis: 100%;
             gap: 1rem;
-            max-height: 0;
-            opacity: 0;
+            max-height: 50dvh;
+            opacity: 1;
             transition: .5s ease-in-out;
         }
 
@@ -24,8 +24,8 @@
     @media ($below-tablet) {
         &.filter-by--is-open {
             .wp-block-categories-list {
-                max-height: 50dvh;
-                opacity: 1;
+                max-height: 0;
+                opacity: 0;
                 transition: .5s ease-in-out;
                 margin-bottom: var(--wp--preset--spacing--40);
             }

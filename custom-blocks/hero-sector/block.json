@@ -1,0 +1,24 @@
+{
+    "apiVersion": 2,
+    "name": "acf/hero-sector",
+    "title": "Hero for use cases Sectors",
+    "category": "design",
+    "icon": "cover-image",
+    "keywords": ["hero", "cases", "casos", "sector"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero-sector.php"
+    },
+    "supports": {
+        "align" : true,
+        "className": true,
+        "spacing": {
+            "margin": true, 
+            "padding": true, 
+            "blockGap": true
+        },
+        "jsx": true 
+    },
+
+    "style": "file:./related-cases.css"
+}
